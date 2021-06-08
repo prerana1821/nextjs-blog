@@ -12,10 +12,13 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello myself Prerana</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href='https://nextjs.org/learn'>our Next.js tutorial</a>.)
+          Hello everyone, I’m Prerana a Full-Stack Web Developer. I love to code
+          and build projects. Currently learning Next.JS.
+        </p>
+        <p>
+          (This is a sample blog site - you can view all by blogs{" "}
+          <a href='https://precodes.netlify.app/blogs.html'>here</a>.)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
