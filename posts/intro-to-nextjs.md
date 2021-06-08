@@ -13,7 +13,7 @@ Next.JS is a framework that allows you to build a react app but render the conte
 
 Next can perform multiple server rendering strategies from a single project.
 
-1. **Statis Generation** or **Pre-rendering** allows you to render your pages at build time each page or component can implement it. It works great for a blog or any kind of app where the data doesn't change often.
+1. **Static Generation** or **Pre-rendering** allows you to render your pages at build time each page or component can implement it. It works great for a blog or any kind of app where the data doesn't change often.
 
 2. If the data does change often you can implement **Server-side Rendering** which builds the html page each time it's requested by the user so instead of running at build time this function runs at request time that means the page will fetch the latest data on the server each time a new request comes in. That's great for pages with rapidly changing data. 
 
