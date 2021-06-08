@@ -1,19 +1,17 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
+title: 'Introduction to Next.JS'
 date: '2020-01-02'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+**Next.JS** creates fast, search engine optimize react apps with zero configuration.
+A Traditional react app is rendered client side where the browser with a html page lacking any rendered content from there the browser fetches the javascript file containing the react code to render content to the page and make it interactive but there are two major drawbacks with client-side rendering 
+1. The content is not reliably indexed by all search engines or even read by social media link bots. 
+2. It can take longer to reach the first contentful paint when a user first lands on the web page 
 
-You can use Static Generation for many types of pages, including:
+Next.JS is a framework that allows you to build a react app but render the content in advance on the server so the first thing a user or search bot sees is the fully rendered html after receiving the initial page client-side rendering takes over and it works just like a traditional react app it's the best of both worlds fully rendered content for bits highly interactive content for users.
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+Next can perform multiple server rendering strategies from a single project.
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+1. **Statis Generation** or **Pre-rendering** allows you to render your pages at build time each page or component can implement it. It works great for a blog or any kind of app where the data doesn't change often.
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+2. If the data does change often you can implement **Server-side Rendering** which builds the html page each time it's requested by the user so instead of running at build time this function runs at request time that means the page will fetch the latest data on the server each time a new request comes in. That's great for pages with rapidly changing data. 
