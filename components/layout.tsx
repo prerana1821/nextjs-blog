@@ -88,7 +88,10 @@ export default function Layout({
   return (
     <div className={styles.container}>
       <Head>
-        <link rel='icon' href='/favicon.ico' />
+        <link
+          rel='icon'
+          href='https://www.google.com/s2/u/0/favicons?domain=prerana-nawar.netlify.com'
+        />
         <meta name='description' content='Next.js Blog Site' />
         <meta
           property='og:image'
